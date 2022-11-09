@@ -28,12 +28,13 @@
 {
   "name": "qidada-npm", // 重要! npm install <?> 包名，全局唯一
   "version": "1.0.0", // 版本号，每次发布累加一
-  "description": "npm发包流程", // seo 三剑客
+  "description": "react-npm发包流程", // seo 三剑客
   "main": "./index.js",// 重要！import Demo from "qidada-npm" 就是引入main指定的文件～
   "keywords": [
     "npm发布",
     "react组件",
     "react component",
+    "react-component",
     "npm publish",
     "qidada-npm",
     "npm-study"
@@ -63,18 +64,14 @@
     "css-loader": "^6.7.1",
     "style-loader": "^3.3.1"
   },
-  // "directories": {
-  //   "example": "example",
-  //   "lib": "lib"
-  // },
-  // "repository": {
-  //   "type": "git",
-  //   "url": "git+https://github.com/douyacun/npm-publish-react-component.git"
-  // },
-  // "bugs": {
-  //   "url": "https://github.com/douyacun/npm-publish-react-component/issues"
-  // },
-  // "homepage": "https://github.com/douyacun/npm-publish-react-component#readme"
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douyacun/npm-publish-react-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qi-DaDa/qidada-npm/issues"
+  },
+    "homepage": "https://github.com/Qi-DaDa/qidada-npm#readme"
 }
 ```
 ---
@@ -93,16 +90,16 @@
 `npm i webpack-dev-server -D`
 
 ### 安装babel编译
-`npm i babel-core babel-loader babel-preset-env babel-preset-react -D`
+`npm i babel-cli babel-core babel-loader babel-preset-env babel-preset-react -D`
 
 ### 配置实时打包 
-` npm i html-webpack-plugin clean-webpack-plugin -D   `
+` npm i html-webpack-plugin clean-webpack-plugin -D`
 
 
 ---
 
 * 若`package.json`中的`main`引入的是未编译的`jsx`,需要在在`webpack.config.js`中`exclude: /node_modules/` 去除，否则引入的组件无法编译；
-* 所以 `package.json`中的`main` 引入的是编译后的；
+* 所以 `package.json`中的`main` 引入的是编译后的`js`文件，可以直接使用
 
 
 
