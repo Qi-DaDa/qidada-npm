@@ -99,6 +99,12 @@
 ` npm i html-webpack-plugin clean-webpack-plugin -D   `
 
 
+---
+
+* 若`package.json`中的`main`引入的是未编译的`jsx`,需要在在`webpack.config.js`中`exclude: /node_modules/` 去除，否则引入的组件无法编译；
+* 所以 `package.json`中的`main` 引入的是编译后的；
+
+
 
 
 

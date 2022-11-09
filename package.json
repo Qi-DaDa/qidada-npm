@@ -1,9 +1,9 @@
 {
   "name": "qidada-npm",
-  "version": "1.0.8",
+  "version": "1.0.16",
   "description": "npm发包流程",
   "private": false,
-  "main": "index.js",
+  "main": "./dist/index.js",
   "keywords": [
     "npm发布",
     "react组件",
@@ -15,16 +15,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "transpile": "babel src/Loading -d dist --copy-files"
   },
   "author": "qidada",
   "license": "ISC",
   "dependencies": {
-    "qidada-npm": "^1.0.8",
+    "qidada-npm": "^1.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.7.0",

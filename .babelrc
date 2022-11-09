@@ -1,7 +1,8 @@
+// 文件中配置相应的内容来告诉babel-loader 使用ES6和JSX插件
 {
-  // 文件中配置相应的内容来告诉babel-loader 使用ES6和JSX插件
   "presets": [
     "env",
     "react"
-  ]
+  ],
+  "plugins": []
 }
