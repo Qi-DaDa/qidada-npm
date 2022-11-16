@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\灰豚数据-前端react\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add optimize-css-assets-webpack-plugin
+  C:\Program Files\nodejs\node.exe C:\Users\灰豚数据-前端react\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add qidada-npm
 
 PATH: 
   C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\Tencent\微信web开发者工具\dll;D:\Program Files\微信web开发者工具\dll;C:\Users\灰豚数据-前端react\AppData\Local\Microsoft\WindowsApps;C:\Users\灰豚数据-前端react\AppData\Local\Turbo\Cmd\;C:\Users\灰豚数据-前端react\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\灰豚数据-前端react\AppData\Roaming\npm;
@@ -14,13 +14,13 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.17.35:443
+  Error: connect ETIMEDOUT 104.16.19.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)
 
 npm manifest: 
   {
     "name": "qidada-npm",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "license": "MIT",
     "description": "npm发包流程",
     "private": false,
@@ -64,7 +64,8 @@ npm manifest:
     },
     "bugs": {
       "url": "https://github.com/Qi-DaDa/qidada-npm/issues"
-    }
+    },
+    "homepage": "https://github.com/Qi-DaDa/qidada-npm#readme"
   }
 
 yarn manifest: 

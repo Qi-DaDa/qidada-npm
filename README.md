@@ -54,12 +54,10 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1",
-
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "css-loader": "^6.7.1",
     "style-loader": "^3.3.1"
@@ -71,7 +69,7 @@
   "bugs": {
     "url": "https://github.com/Qi-DaDa/qidada-npm/issues"
   },
-    "homepage": "https://github.com/Qi-DaDa/qidada-npm#readme"
+  "homepage": "https://github.com/Qi-DaDa/qidada-npm#readme"
 }
 ```
 ---
