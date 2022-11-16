@@ -1,8 +1,16 @@
-// 文件中配置相应的内容来告诉babel-loader 使用ES6和JSX插件
 {
+  // 预先调整：执行顺序是颠倒的（从后往前）
   "presets": [
     "env",
     "react"
   ],
-  "plugins": []
+  // 插件：插件在 Presets 前运行
+  "plugins": [],
+  // 是否产生注释：webpack之中使用UglifyJsPlugin插件也是一样的效果
+  "comments": false,
+  // 是否压缩
+  "minified": true
 }
+// 一般有了babel.config.js 就不会在去执行.babelrc的设置。
+// 不但可以.babelrc或babel.config中配置babel，也可以在webpack.config.js中配置；
+// 在webpack.confing.js是在通过babel-loader进行连接的

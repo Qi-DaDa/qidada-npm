@@ -89,19 +89,24 @@
 ### 启动服务
 `npm i webpack-dev-server -D`
 
-### 安装babel编译
-`npm i babel-cli babel-core babel-loader babel-preset-env babel-preset-react -D`
+### 安装babel核心包
+`npm i babel-cli babel-core babel-preset-env -D`
+
+### 安装对react编译
+`npm i babel-loader -D`
+
+### babel嵌套在webpack中 
+`npm i babel-preset-react -D`
 
 ### 配置实时打包 
 ` npm i html-webpack-plugin clean-webpack-plugin -D`
-
 
 ---
 
 * 若`package.json`中的`main`引入的是未编译的`jsx`,需要在在`webpack.config.js`中`exclude: /node_modules/` 去除，否则引入的组件无法编译；
 * 所以 `package.json`中的`main` 引入的是编译后的`js`文件，可以直接使用
 
-
-
+--- 
+注：通常我们比较少使用webpack打包npm，原因是webpack比较重，npm打包后的dist目录可能会包含webpack自身的处理逻辑，引起不必要的体积增大（但实际增大的也不会太多），轻巧的rollup等工具比较适合用来打包npm
 
 
