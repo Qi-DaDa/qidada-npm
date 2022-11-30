@@ -97,7 +97,7 @@
 `npm i babel-preset-react -D`
 
 ### 配置实时打包 
-` npm i html-webpack-plugin clean-webpack-plugin -D`
+` npm i html-webpack-plugin -D`
 
 ---
 
